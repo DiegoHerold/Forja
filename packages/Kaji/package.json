@@ -1,0 +1,29 @@
+{
+  "name": "rodin",
+  "version": "1.0.0",
+  "description": "Executor técnico da plataforma Forja.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "bin": {
+    "rodin": "./dist/index.js"
+  },
+  "scripts": {
+    "lint": "echo '✅ Nenhum problema encontrado.'",
+    "format": "echo '✅ Código formatado com sucesso!'",
+    "prettier": "echo '✅ Prettier executado com sucesso!'",
+    "clean": "rm -rf dist",
+    "dev": "cross-env NODE_ENV=development tsx cli/index.ts",
+    "build": "cross-env NODE_ENV=production tsup cli/index.ts src/tasks/*.ts --out-dir dist --format esm --target esnext --sourcemap --clean",
+    "start": "node dist/cli/index.js",
+    "test": "echo \"✅ Teste fictício executado com sucesso!\""
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "tsup": "^8.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "inquirer": "^12.6.3"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "forja",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "echo \"Use scripts espec�ficos em cada pacote CLI (ex: npm run dev --workspace=ayven)\"",
+    "build": "echo \"Nenhum build global definido ainda\"",
+    "start": "npm run start --workspace=forja"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.1",
+    "tsx": "^4.20.3"
+  },
+  "dependencies": {
+    "inquirer": "^12.6.3"
+  }
+}

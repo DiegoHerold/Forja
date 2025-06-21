@@ -1,0 +1,18 @@
+{
+  "name": "forja",
+  "version": "1.0.0",
+  "main": "cli/index.ts",
+  "bin": {
+    "forja": "./cli/index.ts"
+  },
+  "scripts": {
+    "start": "tsx cli/index.ts"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "inquirer": "^9.3.7"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0"
+  }
+}
